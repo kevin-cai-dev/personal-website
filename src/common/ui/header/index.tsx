@@ -5,7 +5,7 @@ import { DarkModeToggle, HamburgerMenu } from '@common/ui';
 
 const Header = () => {
     return (
-        <div className="navbar bg-base-100 px-4 sm:px-16">
+        <div className="navbar absolute top-0 left-0 w-full px-4 sm:px-16">
             <div className="navbar-start">
                 <HamburgerMenu />
             </div>

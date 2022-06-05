@@ -7,7 +7,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ThemeProvider>
+        <ThemeProvider enableSystem={false}>
             <Drawer>
                 <Component {...pageProps} />
                 <Footer />

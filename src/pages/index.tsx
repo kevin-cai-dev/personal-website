@@ -6,8 +6,8 @@ import HeroBanner from '@components/hero-banner';
 const Home: NextPage = () => {
     return (
         <>
+            <Header />
             <TitleSection>
-                <Header />
                 <HeroBanner />
             </TitleSection>
             <PageSection>hi there</PageSection>
