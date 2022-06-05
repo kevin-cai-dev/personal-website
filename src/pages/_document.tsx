@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html className="overflow-visible">
                 <Head>
                     <link
                         rel="preconnect"
@@ -15,7 +15,7 @@ class MyDocument extends Document {
                         rel="stylesheet"
                     />
                 </Head>
-                <body>
+                <body className="overflow-visible">
                     <Main />
                     <NextScript />
                 </body>

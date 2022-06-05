@@ -1,12 +1,18 @@
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 
+import { Header, Footer, Drawer } from '@common/ui';
+
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider>
-            <Component {...pageProps} />
+            <Drawer>
+                <Header />
+                <Component {...pageProps} />
+                <Footer />
+            </Drawer>
         </ThemeProvider>
     );
 }
