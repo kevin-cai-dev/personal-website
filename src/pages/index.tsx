@@ -1,12 +1,14 @@
 import type { NextPage } from 'next';
 
-import { TitleSection, PageSection } from '@common/ui';
+import { Header, TitleSection, PageSection } from '@common/ui';
+import HeroBanner from '@components/hero-banner';
 
 const Home: NextPage = () => {
     return (
         <>
             <TitleSection>
-                <h1 className="font-code text-8xl">WOW</h1>
+                <Header />
+                <HeroBanner />
             </TitleSection>
             <PageSection>hi there</PageSection>
         </>

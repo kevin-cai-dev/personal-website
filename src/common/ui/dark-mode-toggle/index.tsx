@@ -20,7 +20,7 @@ const DarkModeToggle = () => {
     }
 
     return (
-        <>
+        <button className="btn btn-ghost btn-circle">
             {theme === DARK ? (
                 <MoonIcon
                     className="h-6 fill-base-content xs:h-8"
@@ -32,7 +32,7 @@ const DarkModeToggle = () => {
                     onClick={onClick}
                 />
             )}
-        </>
+        </button>
     );
 };
 
