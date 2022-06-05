@@ -11,7 +11,13 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal", "index"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent"],
+          "index"
+        ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
