@@ -1,6 +1,6 @@
 import { MenuIcon } from '@heroicons/react/solid';
 
-const HamburgerMenu = () => {
+export const HamburgerMenu = () => {
     return (
         <label
             htmlFor="my-drawer"
@@ -10,5 +10,3 @@ const HamburgerMenu = () => {
         </label>
     );
 };
-
-export default HamburgerMenu;

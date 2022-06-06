@@ -4,7 +4,7 @@ interface Props {
     children: ReactNode;
 }
 
-const Drawer = ({ children }: Props) => {
+export const Drawer = ({ children }: Props) => {
     return (
         <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -23,5 +23,3 @@ const Drawer = ({ children }: Props) => {
         </div>
     );
 };
-
-export default Drawer;

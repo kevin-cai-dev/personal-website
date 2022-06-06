@@ -1,14 +1,13 @@
 import type { NextPage } from 'next';
 
-import { Header, TitleSection, PageSection } from '@common/ui';
-import HeroBanner from '@components/hero-banner';
+import { TitleSection, PageSection } from '@common/ui';
+import LandingHeroBanner from '@components/landing-hero-banner';
 
 const Home: NextPage = () => {
     return (
         <>
-            <Header />
             <TitleSection>
-                <HeroBanner />
+                <LandingHeroBanner />
             </TitleSection>
             <PageSection>hi there</PageSection>
         </>

@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from '@assets/logo';
 import { DarkModeToggle, HamburgerMenu } from '@common/ui';
 
-const Header = () => {
+export const Header = () => {
     return (
         <div className="navbar absolute top-0 left-0 w-full px-4 sm:px-16">
             <div className="navbar-start">
@@ -18,5 +18,3 @@ const Header = () => {
         </div>
     );
 };
-
-export default Header;

@@ -6,7 +6,7 @@
         <circle r="31.1" cx="78.27" cy="102.6" fill="rgba(220, 220, 220, 0.45)"></circle>
         <circle r="78.175" cx="1197.72" cy="550.44" fill="rgba(220, 220, 220, 0.45)"></circle>
         <circle r="40.095" cx="283.71" cy="916.84" fill="rgba(220, 220, 220, 0.45)"></circle>
-        <circle r="67.545" cx="351.2" cy="639.72" fill="rgba(220, 220, 220, 0.45)"></circle>
+        <circle r="67.545" cx="351.2" cy="639.72" fill="rgba(220, 220, 220, 0.30)"></circle>
         <circle r="66.085" cx="1293.63" cy="666.64" fill="rgba(220, 220, 220, 0.45)"></circle>
     </g>
     <defs>

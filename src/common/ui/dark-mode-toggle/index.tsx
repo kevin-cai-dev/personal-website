@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 import { LIGHT, DARK } from '@common/constants';
 
-const DarkModeToggle = () => {
+export const DarkModeToggle = () => {
     const { theme, setTheme } = useTheme();
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
@@ -35,5 +35,3 @@ const DarkModeToggle = () => {
         </button>
     );
 };
-
-export default DarkModeToggle;

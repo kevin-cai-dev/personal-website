@@ -4,7 +4,7 @@ interface Props {
     children: ReactNode;
 }
 
-const TitleSection = ({ children }: Props) => {
+export const TitleSection = ({ children }: Props) => {
     return (
         <div
             className="h-full w-full bg-base-100"
@@ -14,9 +14,7 @@ const TitleSection = ({ children }: Props) => {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <div className="h-full px-8">{children}</div>
+            <div className="h-full px-4 sm:px-8 lg:px-16">{children}</div>
         </div>
     );
 };
-
-export default TitleSection;

@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 
-import { Footer, Drawer } from '@common/ui';
+import { Header, Footer, Drawer } from '@common/ui';
 
 import '../styles/globals.css';
 
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider enableSystem={false}>
             <Drawer>
+                <Header />
                 <Component {...pageProps} />
                 <Footer />
             </Drawer>
