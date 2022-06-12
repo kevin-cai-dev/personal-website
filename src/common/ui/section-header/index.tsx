@@ -4,7 +4,7 @@ interface Props {
 
 export const SectionHeader = ({ header }: Props) => {
     return (
-        <h2 className="pb-16 font-header text-5xl font-bold uppercase italic">
+        <h2 className="pb-6 font-header text-5xl font-bold uppercase italic md:pb-16">
             {header}
         </h2>
     );

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 import filler from '/public/filler.jpg';
 
@@ -13,8 +14,8 @@ const About = ({ content }: Props) => {
     return (
         <>
             <SectionHeader header="about me" />
-            <div className="grid grid-cols-2 gap-8">
-                <div className="w-full basis-1/2 justify-self-center pr-8">
+            <div className="grid gap-4 md:grid-cols-2">
+                <div className="w-full max-w-[70vw] basis-1/2 justify-self-center md:pr-2 lg:pr-8">
                     <Image
                         src={filler}
                         alt=""
@@ -25,7 +26,12 @@ const About = ({ content }: Props) => {
                         placeholder="blur"
                     />
                 </div>
-                <ReactMarkdown className="prose">{content}</ReactMarkdown>
+                <ReactMarkdown
+                    rehypePlugins={[rehypeRaw]}
+                    className="prose prose-sm max-w-none basis-1/2 justify-self-center xs:prose-base lg:prose-lg"
+                >
+                    {content}
+                </ReactMarkdown>
             </div>
         </>
     );
