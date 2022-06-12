@@ -1,0 +1,31 @@
+import { ReactNode } from 'react';
+
+interface Props {
+    iconInfo: {
+        name: string;
+        link: string;
+        icon: ReactNode;
+        download?: boolean;
+    }[];
+}
+
+export const DisplayIcons = ({ iconInfo }: Props) => {
+    return (
+        <div className="flex space-x-4 text-3xl text-base-content md:space-x-6  md:text-5xl landscape:text-3xl landscape:lg:text-5xl">
+            {iconInfo.map((info) => {
+                return (
+                    <a
+                        href={info.link}
+                        key={info.name}
+                        className="transition-colors duration-100 hover:text-accent"
+                        target="_blank"
+                        rel="noreferrer"
+                        download={info.download === true}
+                    >
+                        {info.icon}
+                    </a>
+                );
+            })}
+        </div>
+    );
+};

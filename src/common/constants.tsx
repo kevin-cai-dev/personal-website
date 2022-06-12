@@ -1,13 +1,10 @@
-import {
-    instagramIcon,
-    linkedInIcon,
-    githubIcon,
-    emailIcon,
-    resumeIcon,
-} from '@common/ui/link-icons';
+import { icons } from '@assets/icons';
 
 export const LIGHT = 'light';
 export const DARK = 'dark';
+
+const { instagramIcon, linkedInIcon, githubIcon, emailIcon, resumeIcon } =
+    icons;
 
 export const landingIconInfo = [
     {

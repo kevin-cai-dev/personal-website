@@ -4,8 +4,9 @@ import { Footer } from './footer';
 import { HamburgerMenu } from './hamburger-menu';
 import { Header } from './header';
 import { HeroBanner } from './hero-banner';
-import { DisplayIcons } from './link-icons';
+import { DisplayIcons } from './icon-link';
 import { PageSection } from './page-section';
+import { SectionHeader } from './section-header';
 import { TitleSection } from './title-section';
 
 export {
@@ -18,4 +19,5 @@ export {
     HamburgerMenu,
     DisplayIcons,
     HeroBanner,
+    SectionHeader,
 };

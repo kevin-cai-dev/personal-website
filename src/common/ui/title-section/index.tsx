@@ -9,12 +9,14 @@ export const TitleSection = ({ children }: Props) => {
         <div
             className="h-full w-full bg-base-100"
             style={{
-                backgroundImage: `url('/hero-banner.svg')`,
+                backgroundImage: `url(/hero-banner.svg)`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <div className="h-full px-4 sm:px-8 lg:px-16">{children}</div>
+            <div className="m-auto h-full max-w-screen-2xl px-4 sm:px-8 lg:px-16">
+                {children}
+            </div>
         </div>
     );
 };
