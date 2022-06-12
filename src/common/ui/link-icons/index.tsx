@@ -23,6 +23,7 @@ interface DisplayIconsProps {
         name: string;
         link: string;
         icon: ReactNode;
+        download?: boolean;
     }[];
 }
 
@@ -37,6 +38,7 @@ export const DisplayIcons = ({ iconInfo }: DisplayIconsProps) => {
                         className="transition-colors duration-100 hover:text-accent"
                         target="_blank"
                         rel="noreferrer"
+                        download={info.download === true}
                     >
                         {info.icon}
                     </a>

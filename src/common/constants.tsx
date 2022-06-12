@@ -51,6 +51,7 @@ export const portfolioIconInfo = [
     {
         icon: resumeIcon,
         name: 'resume',
-        link: 'https://github.com/Kevin-Cai-dev',
+        link: '/hero-banner.svg',
+        download: true,
     },
 ];
