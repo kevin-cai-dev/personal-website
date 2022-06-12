@@ -1,4 +1,5 @@
-import { SunIcon, MoonIcon } from '@heroicons/react/solid';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 
@@ -20,16 +21,19 @@ export const DarkModeToggle = () => {
     }
 
     return (
-        <button className="btn btn-ghost btn-circle">
+        <button
+            className="btn btn-ghost btn-circle h-6 fill-base-content xs:h-8"
+            onClick={onClick}
+        >
             {theme === DARK ? (
-                <MoonIcon
-                    className="h-6 fill-base-content xs:h-8"
-                    onClick={onClick}
+                <FontAwesomeIcon
+                    icon={faMoon}
+                    className="h-4 w-4 xs:h-6 xs:w-6"
                 />
             ) : (
-                <SunIcon
-                    className="h-6 fill-base-content xs:h-8"
-                    onClick={onClick}
+                <FontAwesomeIcon
+                    icon={faSun}
+                    className="h-4 w-4 xs:h-6 xs:w-6"
                 />
             )}
         </button>
