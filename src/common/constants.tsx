@@ -22,11 +22,6 @@ export const landingIconInfo = [
         name: 'github',
         link: 'https://github.com/Kevin-Cai-dev',
     },
-    {
-        icon: emailIcon,
-        name: 'email',
-        link: 'mailto:kevin.cai1028@gmail.com',
-    },
 ];
 
 export const portfolioIconInfo = [
@@ -50,5 +45,33 @@ export const portfolioIconInfo = [
         name: 'resume',
         link: '/hero-banner.svg',
         download: true,
+    },
+];
+
+export const exploreLinksInfo = [
+    {
+        name: 'Portfolio',
+        href: '/portfolio',
+        imgPath: '/filler.jpg',
+    },
+    {
+        name: 'Keyboards',
+        href: '/keyboards',
+        imgPath: '/filler.jpg',
+    },
+];
+
+export const pageLinksInfo = [
+    {
+        name: 'Home',
+        href: '/',
+    },
+    {
+        name: 'Portfolio',
+        href: '/portfolio',
+    },
+    {
+        name: 'Keyboards',
+        href: '/keyboards',
     },
 ];

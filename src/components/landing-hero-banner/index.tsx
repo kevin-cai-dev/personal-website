@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Avatar from '@assets/peep-standing';
+import { LandingAvatar } from '@assets/peep-standing';
 import { landingIconInfo } from '@common/constants';
-import { HeroBanner } from '@common/ui';
+import { HeroBanner, TitleSection } from '@common/ui';
 
 import { messages } from './messages';
 
@@ -17,14 +17,14 @@ const message = (
     </>
 );
 
-const LandingHeroBanner = () => {
+export const LandingHeroBanner = () => {
     return (
-        <HeroBanner
-            messages={message}
-            iconInfo={landingIconInfo}
-            avatar={<Avatar />}
-        />
+        <TitleSection>
+            <HeroBanner
+                messages={message}
+                iconInfo={landingIconInfo}
+                avatar={<LandingAvatar />}
+            />
+        </TitleSection>
     );
 };
-
-export default LandingHeroBanner;

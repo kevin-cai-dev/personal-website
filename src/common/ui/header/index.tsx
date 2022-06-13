@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React from 'react';
 
-import Logo from '@assets/logo';
+import { Logo } from '@assets/logo';
 import { DarkModeToggle, HamburgerMenu } from '@common/ui';
 
 export const Header = () => {
@@ -10,7 +11,12 @@ export const Header = () => {
                 <HamburgerMenu />
             </div>
             <div className="navbar-center">
-                <Logo />
+                {/* hacky workaround to use functional components with next/link */}
+                <Link href="/" passHref>
+                    <a className="link">
+                        <Logo />
+                    </a>
+                </Link>
             </div>
             <div className="navbar-end">
                 <DarkModeToggle />

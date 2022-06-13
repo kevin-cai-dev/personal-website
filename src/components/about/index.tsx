@@ -4,16 +4,18 @@ import rehypeRaw from 'rehype-raw';
 
 import filler from '/public/filler.jpg';
 
-import { SectionHeader } from '@common/ui';
+import { SectionHeader, PageSection } from '@common/ui';
+
+import { messages } from './messages';
 
 interface Props {
     content: string;
 }
 
-const About = ({ content }: Props) => {
+export const About = ({ content }: Props) => {
     return (
-        <>
-            <SectionHeader header="about me" />
+        <PageSection>
+            <SectionHeader header={messages.title} />
             <div className="grid gap-4 md:grid-cols-2">
                 <div className="w-full max-w-[70vw] basis-1/2 justify-self-center md:pr-2 lg:pr-8">
                     <Image
@@ -33,8 +35,6 @@ const About = ({ content }: Props) => {
                     {content}
                 </ReactMarkdown>
             </div>
-        </>
+        </PageSection>
     );
 };
-
-export default About;

@@ -1,4 +1,7 @@
+import Link from 'next/link';
+
 import { landingIconInfo } from '@common/constants';
+import { pageLinksInfo } from '@common/constants';
 import { DisplayIcons } from '@common/ui';
 
 import { messages } from './messages';
@@ -9,9 +12,15 @@ export const Footer = () => {
     return (
         <footer className="footer footer-center bg-base-200 p-10">
             <div className="grid grid-flow-col gap-4">
-                <a className="link link-hover">{messages.home}</a>
-                <a className="link link-hover">{messages.portfolio}</a>
-                <a className="link link-hover">{messages.keyboards}</a>
+                {pageLinksInfo.map((info, index) => {
+                    return (
+                        <Link href={info.href} key={`${info.name} ${index}`}>
+                            <span className="link link-hover uppercase">
+                                {info.name}
+                            </span>
+                        </Link>
+                    );
+                })}
             </div>
             <DisplayIcons iconInfo={landingIconInfo} />
             <div>
