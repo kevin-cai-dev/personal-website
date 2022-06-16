@@ -6,7 +6,7 @@ export const LandingAvatar = () => {
             height="780"
             fill="none"
             viewBox="0 0 391 780"
-            className="m-auto max-h-screen w-auto scale-75 pt-12 md:scale-100 lg:scale-110"
+            className="m-auto hidden max-h-screen w-auto scale-75 pt-12 sm:block md:scale-100 lg:scale-110 landscape:block"
         >
             <path
                 fill="#fff"

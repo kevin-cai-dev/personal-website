@@ -1,12 +1,7 @@
-import { ReactNode } from 'react';
+import { IconInfo } from '@common/constants';
 
 interface Props {
-    iconInfo: {
-        name: string;
-        link: string;
-        icon: ReactNode;
-        download?: boolean;
-    }[];
+    iconInfo: IconInfo[];
 }
 
 export const DisplayIcons = ({ iconInfo }: Props) => {
@@ -17,7 +12,8 @@ export const DisplayIcons = ({ iconInfo }: Props) => {
                     <a
                         href={info.link}
                         key={info.name}
-                        className="transition-colors duration-100 hover:text-accent"
+                        className="tooltip tooltip-bottom transition-colors duration-100 hover:text-accent"
+                        data-tip={info.tooltip}
                         target="_blank"
                         rel="noreferrer"
                         download={info.download === true}

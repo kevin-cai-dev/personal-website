@@ -6,13 +6,13 @@ import {
 import {
     faEnvelope,
     faEnvelopeOpen,
-    faFilePdf,
+    faFile,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const linkedInIcon = <FontAwesomeIcon icon={faLinkedin} />;
 const githubIcon = <FontAwesomeIcon icon={faGithubSquare} />;
-const resumeIcon = <FontAwesomeIcon icon={faFilePdf} />;
+const resumeIcon = <FontAwesomeIcon icon={faFile} />;
 const instagramIcon = <FontAwesomeIcon icon={faInstagramSquare} />;
 const emailIcon = <FontAwesomeIcon icon={faEnvelope} />;
 const emailOpenIcon = <FontAwesomeIcon icon={faEnvelopeOpen} />;
