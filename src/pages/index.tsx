@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 import { getPost } from '@common/utils';
 import { About } from '@components/about';
@@ -12,6 +13,9 @@ interface Props {
 const Home: NextPage<Props> = ({ content }) => {
     return (
         <>
+            <Head>
+                <title>Home</title>
+            </Head>
             <LandingHeroBanner />
             <About content={content} />
             <Explore />

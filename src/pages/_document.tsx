@@ -5,6 +5,11 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <meta name="author" content="Kevin Cai" />
+                    <meta
+                        name="description"
+                        content="This website is designed to be a personal hub, containing both professional and personal content."
+                    />
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"

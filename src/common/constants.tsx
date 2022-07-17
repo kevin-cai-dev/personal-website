@@ -5,8 +5,16 @@ import { icons } from '@assets/icons';
 export const LIGHT = 'light';
 export const DARK = 'dark';
 
-const { instagramIcon, linkedInIcon, githubIcon, emailIcon, resumeIcon } =
-    icons;
+const {
+    instagramIcon,
+    linkedInIcon,
+    githubIcon,
+    emailIcon,
+    resumeIcon,
+    homeIcon,
+    portfolioIcon,
+    keyboardIcon,
+} = icons;
 
 const linkedInInfo = {
     icon: linkedInIcon,
@@ -73,13 +81,16 @@ export const pageLinksInfo = [
     {
         name: 'Home',
         href: '/',
+        icon: homeIcon,
     },
     {
         name: 'Portfolio',
         href: '/portfolio',
+        icon: portfolioIcon,
     },
     {
         name: 'Keyboards',
         href: '/keyboards',
+        icon: keyboardIcon,
     },
 ];
