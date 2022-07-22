@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 
-import filler from '/public/filler.jpg';
+import profile from '/public/profile.jpg';
 
 import { SectionHeader, PageSection } from '@common/ui';
 
@@ -19,7 +19,7 @@ export const About = ({ content }: Props) => {
             <div className="grid gap-4 md:grid-cols-2">
                 <div className="w-full max-w-[70vw] basis-1/2 justify-self-center md:pr-2 lg:pr-8">
                     <Image
-                        src={filler}
+                        src={profile}
                         alt=""
                         width={3752}
                         height={5757}

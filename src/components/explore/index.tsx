@@ -14,7 +14,7 @@ export const Explore = () => {
                     return (
                         <Link href={info.href} key={`${info.name} ${index}`}>
                             <div
-                                className="h-24 grow basis-full bg-base-100 bg-cover bg-no-repeat xs:h-36 xs:basis-5/12 md:h-48 lg:h-64"
+                                className="h-24 grow basis-full bg-base-100 bg-cover bg-center bg-no-repeat xs:h-36 xs:basis-5/12 md:h-48 lg:h-64"
                                 style={{
                                     backgroundImage: `url(${info.imgPath})`,
                                 }}

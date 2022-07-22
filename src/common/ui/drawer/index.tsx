@@ -19,9 +19,9 @@ export const Drawer = ({ children }: Props) => {
                     <div className="divider" />
                     {pageLinksInfo.map((info) => {
                         return (
-                            <li key={info.name} className="hover-bordered">
+                            <li key={info.name}>
                                 <Link href={info.href}>
-                                    <div>
+                                    <div className="hover:bg-primary">
                                         {info.icon}
                                         {info.name}
                                     </div>

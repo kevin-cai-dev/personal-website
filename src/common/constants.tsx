@@ -68,12 +68,12 @@ export const exploreLinksInfo = [
     {
         name: 'Portfolio',
         href: '/portfolio',
-        imgPath: '/filler.jpg',
+        imgPath: '/portfolio-nav.jpg',
     },
     {
         name: 'Keyboards',
         href: '/keyboards',
-        imgPath: '/filler.jpg',
+        imgPath: '/keyboard-nav.jpg',
     },
 ];
 
