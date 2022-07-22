@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
-
 import { icons } from '@assets/icons';
 
 export const LIGHT = 'light';
 export const DARK = 'dark';
+
+export const START_YEAR = 2019;
 
 const {
     instagramIcon,
@@ -16,6 +16,7 @@ const {
     keyboardIcon,
 } = icons;
 
+// external link icons config
 const linkedInInfo = {
     icon: linkedInIcon,
     name: 'linkedIn',
@@ -48,7 +49,10 @@ const resumeInfo = {
     download: true,
 };
 
+// landing page icon links
 export const landingIconInfo = [instagramInfo, linkedInInfo, githubInfo];
+
+// portfolio page icon links
 export const portfolioIconInfo = [
     linkedInInfo,
     githubInfo,
@@ -56,14 +60,7 @@ export const portfolioIconInfo = [
     resumeInfo,
 ];
 
-export interface IconInfo {
-    name: string;
-    link: string;
-    icon: ReactNode;
-    tooltip: string;
-    download?: boolean;
-}
-
+// explore section links
 export const exploreLinksInfo = [
     {
         name: 'Portfolio',
@@ -77,6 +74,7 @@ export const exploreLinksInfo = [
     },
 ];
 
+// shared routing config
 export const pageLinksInfo = [
     {
         name: 'Home',

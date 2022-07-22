@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { IconInfo } from '@common/constants';
+import { IconInfo } from '@common/types';
 import { DisplayIcons } from '@common/ui';
 
 interface Props {

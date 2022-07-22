@@ -19,7 +19,7 @@ export const Explore = () => {
                                     backgroundImage: `url(${info.imgPath})`,
                                 }}
                             >
-                                <div className="flex h-full w-full cursor-pointer justify-center backdrop-blur-sm backdrop-brightness-50 hover:underline">
+                                <div className="flex h-full w-full cursor-pointer justify-center rounded-lg decoration-white backdrop-blur-sm backdrop-brightness-50 hover:underline">
                                     <h2 className="font-heading self-center text-2xl uppercase text-white sm:text-4xl">
                                         {info.name}
                                     </h2>

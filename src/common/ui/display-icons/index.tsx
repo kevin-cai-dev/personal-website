@@ -1,4 +1,4 @@
-import { IconInfo } from '@common/constants';
+import { IconInfo } from '@common/types';
 
 interface Props {
     iconInfo: IconInfo[];
