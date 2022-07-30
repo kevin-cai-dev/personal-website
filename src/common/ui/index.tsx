@@ -7,6 +7,7 @@ import { Header } from './header';
 import { HeroBanner } from './hero-banner';
 import { PageSection } from './page-section';
 import { SectionHeader } from './section-header';
+import { Subheading } from './subheading';
 import { TitleSection } from './title-section';
 
 export {
@@ -20,4 +21,5 @@ export {
     DisplayIcons,
     HeroBanner,
     SectionHeader,
+    Subheading,
 };

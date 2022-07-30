@@ -12,7 +12,7 @@ export const DisplayIcons = ({ iconInfo }: Props) => {
                     <a
                         href={info.link}
                         key={info.name}
-                        className="tooltip tooltip-bottom transition-colors duration-100 hover:text-accent"
+                        className="tooltip tooltip-bottom transition-colors duration-100 hover:text-secondary"
                         data-tip={info.tooltip}
                         target="_blank"
                         rel="noreferrer"

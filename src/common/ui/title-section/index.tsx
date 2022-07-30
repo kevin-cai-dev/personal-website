@@ -7,7 +7,7 @@ interface Props {
 export const TitleSection = ({ children }: Props) => {
     return (
         <div
-            className="h-full w-full bg-cover bg-no-repeat"
+            className="h-full w-full bg-base-100 bg-cover bg-no-repeat"
             style={{
                 backgroundImage: `url(/hero-banner.svg)`,
             }}

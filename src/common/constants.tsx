@@ -3,8 +3,6 @@ import { icons } from '@assets/icons';
 export const LIGHT = 'light';
 export const DARK = 'dark';
 
-export const START_YEAR = 2019;
-
 const {
     instagramIcon,
     linkedInIcon,

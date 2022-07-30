@@ -1,3 +1,3 @@
 export const messages = {
-    title: 'ABOUT ME',
+    title: 'About Me',
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PageSection, SectionHeader } from '@common/ui';
+import { PageSection, SectionHeader, Subheading } from '@common/ui';
 
 import { messages } from './messages';
 
@@ -15,9 +15,7 @@ const Card = ({ location, title, startYear, endYear }: CardProps) => {
     return (
         <div className="flex h-full items-center justify-between rounded-3xl bg-primary p-4">
             <div className="min-w-0 max-w-full grow">
-                <div className="text-md font-header font-bold uppercase tracking-wide md:text-2xl">
-                    {location}
-                </div>
+                <Subheading heading={location} />
                 <div className="text-sm md:text-base">{title}</div>
             </div>
             <div className="min-w-0 max-w-full font-code font-semibold">

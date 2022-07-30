@@ -18,15 +18,7 @@ export const About = ({ content }: Props) => {
             <SectionHeader header={messages.title} />
             <div className="grid gap-4 md:grid-cols-2">
                 <div className="w-full max-w-[70vw] basis-1/2 justify-self-center md:pr-2 lg:pr-8">
-                    <Image
-                        src={profile}
-                        alt=""
-                        width={3752}
-                        height={5757}
-                        layout="responsive"
-                        sizes="50vw"
-                        placeholder="blur"
-                    />
+                    <Image src={profile} alt="" placeholder="blur" />
                 </div>
                 <ReactMarkdown
                     rehypePlugins={[rehypeRaw]}
