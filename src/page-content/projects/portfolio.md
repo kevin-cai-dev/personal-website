@@ -8,4 +8,7 @@ year: 2021
 technologies: ['React', 'Gatsby', 'Javascript', 'GraphQL']
 ---
 
-portfolio website stuff goes here
+The first iteration of a personal website built to display my software
+development portfolio as well as introducing myself. This was my first
+experience with frontend development and acted as a gateway into the world of
+fullstack development.

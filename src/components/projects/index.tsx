@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import { useMemo } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import { ProjectPost } from '@common/types';
 import { PageSection, SectionHeader, Subheading } from '@common/ui';
 
 import { messages } from './messages';
+import { ProjectLinks } from './project-links';
+import { ProjectTech } from './project-tech';
 
 interface Props {
     projects: ProjectPost[];
@@ -25,46 +28,36 @@ export const Projects = ({ projects }: Props) => {
             <>
                 {sortedProjects.map((project) => {
                     const { frontmatter, content } = project;
+                    const {
+                        github,
+                        link,
+                        position,
+                        imageurl,
+                        title,
+                        technologies,
+                    } = frontmatter;
+
                     return (
                         <div
-                            key={frontmatter.position}
+                            key={position}
                             className="mockup-window mb-8 bg-base-300"
                         >
                             <div className="columns-2 bg-base-200 px-4 py-8">
                                 <Image
-                                    src={frontmatter.imageurl}
+                                    src={imageurl}
                                     alt=""
                                     width={2667}
                                     height={4000}
                                     layout="responsive"
                                 />
-                                <Subheading heading={frontmatter.title} />
-                                <div
-                                    className="flex gap-2 py-4"
-                                    id="project button links"
-                                >
-                                    <a
-                                        href={frontmatter.github}
-                                        rel="noreferrer"
-                                        target="_blank"
-                                    >
-                                        <button className="btn btn-outline btn-primary font-sans">
-                                            {messages.github}
-                                        </button>
-                                    </a>
-                                    {frontmatter.link && (
-                                        <a
-                                            href={frontmatter.link}
-                                            rel="noreferrer"
-                                            target="_blank"
-                                        >
-                                            <button className="btn btn-outline btn-secondary font-sans">
-                                                {messages.link}
-                                            </button>
-                                        </a>
-                                    )}
-                                </div>
-                                {content}
+                                <>
+                                    <Subheading heading={title} />
+                                    <ProjectLinks github={github} link={link} />
+                                    <ReactMarkdown className="prose prose-sm max-w-none basis-1/2 justify-self-center xs:prose-base lg:prose-lg">
+                                        {content}
+                                    </ReactMarkdown>
+                                    <ProjectTech technologies={technologies} />
+                                </>
                             </div>
                         </div>
                     );

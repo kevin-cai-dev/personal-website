@@ -12,7 +12,7 @@ export interface ProjectPost {
     frontmatter: {
         position: number;
         title: string;
-        github: string;
+        github?: string;
         link?: string;
         imageurl: string;
         year: number;
