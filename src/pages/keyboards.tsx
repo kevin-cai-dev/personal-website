@@ -5,3 +5,15 @@ const Keyboards: NextPage = () => {
 };
 
 export default Keyboards;
+
+export const getStaticProps = () => {
+    return {
+        ...(process.env.NODE_ENV === 'production' && {
+            redirect: {
+                destination: '/404',
+                permanent: false,
+            },
+        }),
+        props: {},
+    };
+};

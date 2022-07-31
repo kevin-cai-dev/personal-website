@@ -3,6 +3,8 @@ import { icons } from '@assets/icons';
 export const LIGHT = 'light';
 export const DARK = 'dark';
 
+const dev = process.env.NODE_ENV === 'production';
+
 const {
     instagramIcon,
     linkedInIcon,
@@ -65,11 +67,15 @@ export const exploreLinksInfo = [
         href: '/portfolio',
         imgPath: '/portfolio-nav.jpg',
     },
-    {
-        name: 'Keyboards',
-        href: '/keyboards',
-        imgPath: '/keyboard-nav.jpg',
-    },
+    ...(dev
+        ? [
+              {
+                  name: 'Keyboards',
+                  href: '/keyboards',
+                  imgPath: '/keyboard-nav.jpg',
+              },
+          ]
+        : []),
 ];
 
 // shared routing config
@@ -84,9 +90,13 @@ export const pageLinksInfo = [
         href: '/portfolio',
         icon: portfolioIcon,
     },
-    {
-        name: 'Keyboards',
-        href: '/keyboards',
-        icon: keyboardIcon,
-    },
+    ...(dev
+        ? [
+              {
+                  name: 'Keyboards',
+                  href: '/keyboards',
+                  icon: keyboardIcon,
+              },
+          ]
+        : []),
 ];

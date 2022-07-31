@@ -4,7 +4,7 @@ interface Props {
 
 export const ProjectTech = ({ technologies }: Props) => {
     return (
-        <div className="flex gap-2 pt-8">
+        <div className="flex flex-wrap gap-2 pt-8">
             {technologies.map((techName, index) => {
                 return (
                     <div

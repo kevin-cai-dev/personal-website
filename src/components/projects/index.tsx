@@ -3,9 +3,10 @@ import { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import { ProjectPost } from '@common/types';
-import { PageSection, SectionHeader, Subheading } from '@common/ui';
+import { PageSection, SectionHeader } from '@common/ui';
 
 import { messages } from './messages';
+import { ProjectHeading } from './project-heading';
 import { ProjectLinks } from './project-links';
 import { ProjectTech } from './project-tech';
 
@@ -25,7 +26,7 @@ export const Projects = ({ projects }: Props) => {
     return (
         <PageSection>
             <SectionHeader header={messages.title} />
-            <>
+            <div className="flex flex-col gap-8">
                 {sortedProjects.map((project) => {
                     const { frontmatter, content } = project;
                     const {
@@ -35,34 +36,40 @@ export const Projects = ({ projects }: Props) => {
                         imageurl,
                         title,
                         technologies,
+                        year,
                     } = frontmatter;
 
                     return (
                         <div
                             key={position}
-                            className="mockup-window mb-8 bg-base-300"
+                            className="mockup-window bg-base-300"
                         >
-                            <div className="columns-2 bg-base-200 px-4 py-8">
-                                <Image
-                                    src={imageurl}
-                                    alt=""
-                                    width={2667}
-                                    height={4000}
-                                    layout="responsive"
-                                />
-                                <>
-                                    <Subheading heading={title} />
+                            <div className="flex gap-4 bg-base-200 px-4 py-8">
+                                <div className="relative hidden w-1/2 sm:block">
+                                    <Image
+                                        src={imageurl}
+                                        alt=""
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
+                                </div>
+
+                                <div className="pr-4 sm:w-1/2">
+                                    <ProjectHeading
+                                        heading={title}
+                                        year={year}
+                                    />
                                     <ProjectLinks github={github} link={link} />
                                     <ReactMarkdown className="prose prose-sm max-w-none basis-1/2 justify-self-center xs:prose-base lg:prose-lg">
                                         {content}
                                     </ReactMarkdown>
                                     <ProjectTech technologies={technologies} />
-                                </>
+                                </div>
                             </div>
                         </div>
                     );
                 })}
-            </>
+            </div>
         </PageSection>
     );
 };
