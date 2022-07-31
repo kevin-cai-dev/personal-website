@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { getPost } from '@common/utils';
+import { getPost } from '@common/markdown-utils';
 import { About } from '@components/about';
 import { Explore } from '@components/explore';
 import { LandingHeroBanner } from '@components/landing-hero-banner';

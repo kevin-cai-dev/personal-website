@@ -1,34 +1,35 @@
-import fs from 'fs';
-import { join } from 'path';
+interface FormFields {
+    name: string;
+    email: string;
+    message: string;
+}
 
-import matter from 'gray-matter';
+export const validateForm = (formFields: FormFields) => {
+    const errors = {
+        name: '',
+        email: '',
+        message: '',
+    };
+    const { name, email, message } = formFields;
+    let isValid = true;
 
-const pageContentDirectory = join(process.cwd(), 'src/page-content');
+    if (name === '') {
+        errors.name = 'Name cannot be empty';
+        isValid = false;
+    }
 
-export const getPost = (slug: string) => {
-    const realSlug = slug.replace(/\.md$/, '');
-    const fullPath = join(pageContentDirectory, `${realSlug}.md`);
-    const fileContents = fs.readFileSync(fullPath, 'utf-8');
-    const { data: frontmatter, content } = matter(fileContents);
+    if (email !== '' && !/\S+@\S+\.\S+/.test(email)) {
+        errors.email = 'Invalid email';
+        isValid = false;
+    }
+
+    if (message === '') {
+        errors.message = 'Please provide a message';
+        isValid = false;
+    }
 
     return {
-        frontmatter,
-        content,
+        errors,
+        isValid,
     };
-};
-
-export const getPosts = (dirSlug: string) => {
-    const dirPath = join(pageContentDirectory, dirSlug);
-    const files = fs.readdirSync(dirPath);
-
-    return files.map((file) => {
-        const fullPath = join(dirPath, file);
-        const fileContents = fs.readFileSync(fullPath, 'utf-8');
-        const { data: frontmatter, content } = matter(fileContents);
-
-        return {
-            frontmatter,
-            content,
-        };
-    });
 };

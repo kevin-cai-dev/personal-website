@@ -2,6 +2,7 @@ import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { Toaster } from 'react-hot-toast';
 
 import { Header, Footer, Drawer } from '@common/ui';
 
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <ThemeProvider enableSystem={false}>
+            <Toaster position="bottom-left" reverseOrder={false} />
             <Drawer>
                 <Header />
                 <Component {...pageProps} />
