@@ -6,7 +6,7 @@ const Keyboards: NextPage = () => {
 
 export default Keyboards;
 
-export const getStaticProps = () => {
+export const getServerSideProps = () => {
     return {
         ...(process.env.NODE_ENV === 'production' && {
             redirect: {
