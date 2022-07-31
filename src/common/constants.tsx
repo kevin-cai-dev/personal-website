@@ -3,7 +3,7 @@ import { icons } from '@assets/icons';
 export const LIGHT = 'light';
 export const DARK = 'dark';
 
-const dev = process.env.NODE_ENV === 'production';
+const dev = process.env.NODE_ENV === 'development';
 
 const {
     instagramIcon,
