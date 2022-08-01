@@ -7,3 +7,5 @@ to a single page's content. For reusable components, they should live in
 `{component-name}/`: Each component should live in its own separate directory,
 exported through a `index.tsx` file. Additional files such as `messages.tsx` may
 also be present but must not export any data used outside of the component.
+Child components can be declared in nested directories, following the same file
+structure to avoid parent imports

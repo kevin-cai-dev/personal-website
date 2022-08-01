@@ -1,7 +1,10 @@
 {
-    "name": "personal-website",
-    "version": "0.1.0",
+    "name": "kevin-personal-website",
+    "version": "1.0.0",
     "private": true,
+    "homepage": "https://github.com/Kevin-Cai-dev/personal-website#readme",
+    "bugs": "https://github.com/Kevin-Cai-dev/personal-website/issues",
+    "license": "MIT",
     "scripts": {
         "dev": "next dev",
         "build": "next build",

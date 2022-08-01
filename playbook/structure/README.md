@@ -7,6 +7,7 @@ structure.
 ├── src
 │   ├── assets
 │   │   ├── {asset-component}.tsx
+│   │   └── icons.tsx
 │   ├── common
 │   │   ├── ui
 │   │   │   ├── {common-component}/
@@ -20,17 +21,23 @@ structure.
 │   │       ├── index.tsx
 │   │       └── *.tsx
 │   ├── pages
+│   │   └── api/
+│   │   │   └── {apiRoutes}.tsx
 │   │   ├── _app.tsx
 │   │   ├── _document.tsx
 │   │   ├── index.tsx
-│   │   └── {other-pages}.tsx
+│   │   ├── keyboards.tsx
+│   │   └── portfolio.tsx
+│   ├── page-content
+│   │   ├── projects/
+│   │   │   └── {project-info}.md
+│   │   └── about.md
 │   ├── styles
 │   │   └── globals.css
 └── public
     └── {static-content}
 ```
 
-`public/`: This directory contains static content to be served, not bound to a
-page's content.
+[`public/`](public.md): This directory contains static content to be served.
 
 [`src/`](src.md): This directory contains all the source code for the website.

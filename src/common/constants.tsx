@@ -65,14 +65,14 @@ export const exploreLinksInfo = [
     {
         name: 'Portfolio',
         href: '/portfolio',
-        imgPath: '/portfolio-nav.jpg',
+        imgPath: '/navigation-images/portfolio-nav.jpg',
     },
     ...(dev
         ? [
               {
                   name: 'Keyboards',
                   href: '/keyboards',
-                  imgPath: '/keyboard-nav.jpg',
+                  imgPath: '/navigation-images/keyboard-nav.jpg',
               },
           ]
         : []),

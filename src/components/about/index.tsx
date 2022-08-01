@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 
-import profile from '/public/profile.jpg';
+import profile from '/public/homepage-images/profile.jpg';
 
 import { SectionHeader, PageSection } from '@common/ui';
 
