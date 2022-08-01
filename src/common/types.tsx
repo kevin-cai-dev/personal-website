@@ -15,7 +15,6 @@ export interface ProjectPost {
         github?: string;
         link?: string;
         imageurl: string;
-        year: number;
         technologies: string[];
     };
     content: string;

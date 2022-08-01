@@ -36,7 +36,6 @@ export const Projects = ({ projects }: Props) => {
                         imageurl,
                         title,
                         technologies,
-                        year,
                     } = frontmatter;
 
                     return (
@@ -55,10 +54,7 @@ export const Projects = ({ projects }: Props) => {
                                 </div>
 
                                 <div className="pr-4 sm:w-1/2">
-                                    <ProjectHeading
-                                        heading={title}
-                                        year={year}
-                                    />
+                                    <ProjectHeading heading={title} />
                                     <ProjectLinks github={github} link={link} />
                                     <ReactMarkdown className="prose prose-sm max-w-none basis-1/2 justify-self-center xs:prose-base lg:prose-lg">
                                         {content}

@@ -1,7 +1,7 @@
 export const messages = {
     title: 'Contact Me',
     name: 'Name',
-    namePlaceholder: 'John Doe',
+    namePlaceholder: 'John Smith',
     email: 'Email',
     emailPlaceholder: 'email@example.com',
     emailTag: '(Optional)',

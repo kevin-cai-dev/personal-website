@@ -16,7 +16,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
                 <head>
                     <meta charset="utf-8">
                     <title>kevincai.me submission</title>
-                    <meta name="description" content="Website contact form submission">
+                    <meta name="description" content="Website contact form submission: ${req.body.name}">
                     <meta name="author" content="Kevin Cai">
                 <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
                     <link rel="stylesheet" href="css/styles.css?v=1.0">

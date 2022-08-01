@@ -3,7 +3,6 @@ position: 1
 title: 'Discord Voice Channel Bot'
 github: 'https://github.com/Kevin-Cai-dev/node-vc-monitor'
 imageurl: '/project-images/discord-bot.png'
-year: 2021
 technologies: ['Node.js', 'MongoDB', 'DiscordAPI']
 ---
 
