@@ -38,13 +38,13 @@ const githubInfo = {
 const emailInfo = {
     icon: emailIcon,
     name: 'email',
-    link: 'mailto:kevin.cai1028@gmail.com',
+    link: 'mailto:kk.caii.ix@gmail.com',
     tooltip: 'email',
 };
 const resumeInfo = {
     icon: resumeIcon,
     name: 'resume',
-    link: '/hero-banner.svg',
+    link: '/resume.pdf',
     tooltip: 'resume',
     download: true,
 };
