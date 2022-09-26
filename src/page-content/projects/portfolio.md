@@ -1,5 +1,5 @@
 ---
-position: 2
+position: 3
 title: 'Portfolio Website'
 github: 'https://github.com/Kevin-Cai-dev/portfolio'
 link: 'https://adoring-spence-b80cd9.netlify.app/'

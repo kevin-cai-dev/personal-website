@@ -1,5 +1,5 @@
 ---
-position: 1
+position: 2
 title: 'Discord Voice Channel Bot'
 github: 'https://github.com/Kevin-Cai-dev/node-vc-monitor'
 imageurl: '/project-images/discord-bot.png'
