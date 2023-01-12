@@ -18,9 +18,13 @@ Some of the things I'm currently interested in are:
 
 -   ⌨ Mechanical keyboards: I've been very interested in building and customising
     mechanical keyboards since the pandemic started, with an equal focus on sound,
-    feel and design. Although most of my planned builds are still MIA due to long
+    feel and design. Most of my planned builds are still MIA due to long
+    shipping times.
+
+    <!-- Although most of my planned builds are still MIA due to long
     shipping times, I've documented my completed builds over in the
-    [keyboards](/keyboards) section.
+    [keyboards](/keyboards) section. -->
+
 -   📸 Photography: This is a more recent hobby I've picked up in my free time,
     due to a desire to capture the events of my life before I forget about them.
     I aim to catch the 'in the moment' feelings through photography, with a
