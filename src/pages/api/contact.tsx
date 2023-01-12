@@ -7,8 +7,8 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     console.log(req.body);
     try {
         await sendgrid.send({
-            to: 'kk.caii.ix@gmail.com',
-            from: 'kevin.me.contact@gmail.com',
+            to: process.env.CONTACT_EMAIAL || '',
+            from: process.env.SENDGRID_API_KEY || '',
             subject: `Website contact form submission`,
             html: `
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -25,8 +25,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
                 <body>
                     <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
                     <div style="font-size: 16px;">
-                    <p>Message:</p>
-                    <p>${req.body.message}</p>
+                    <p>Message: ${req.body.message}</p>
                     <br>
                     </div>
                 </body>
